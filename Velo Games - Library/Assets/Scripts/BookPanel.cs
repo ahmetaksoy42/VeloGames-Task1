@@ -37,7 +37,8 @@ public class BookPanel : MonoBehaviour
         TimeSpan passedDays = DateTime.Now - borrowedDate;
         int days = passedDays.Days; // sadece gün ve saat gözükmesi için
         int hours = passedDays.Hours;
-        borrowedDaysText.text = $"Passed Days :{days}:{hours}";
+        //borrowedDaysText.text = $"Passed Days :{days}:{hours}";
+        borrowedDaysText.text = $"Passed {days} Days {hours} Hours";
         if ((DateTime.Now - borrowedDate).TotalDays >= Library.Instance.ReturnDays) // 30 günü geçtiyse kýrmýzý yazsýn
         {
             borrowedDaysText.color = Color.red;
@@ -46,17 +47,18 @@ public class BookPanel : MonoBehaviour
     public void SetOverdueBookData(Book book)
     {
         this.book = book;
-        titleText.text = $" Title :  {book.title}";
-        authorText.text = $" Author :{book.author}";
+        titleText.text = $" Title : {book.title}";
+        authorText.text = $" Author : {book.author}";
         isbnText.text = $" ISBN : {book.isbn}";
         borrowIdText.text = $"Borrow Id: {book.borrowId.ToString()}";
-        borrowedDaysText.color = Color.red; // hep kýrmýzý yazacak
+        borrowedDaysText.color = Color.red;
 
         DateTime borrowedDate = DateTime.ParseExact(book.borrowedDate, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
         TimeSpan passedDays = DateTime.Now - borrowedDate;
         int days = passedDays.Days; // sadece gün ve saat gözükmesi için
         int hours = passedDays.Hours;
-        borrowedDaysText.text = $"Passed Days :{days}:{hours}";
+        //borrowedDaysText.text = $"Passed Days :{days}:{hours}";
+        borrowedDaysText.text = $"Passed {days} Days {hours} Hours";
     }
     public void BorrowButton()
     {

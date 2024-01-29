@@ -65,7 +65,7 @@ public class SearchPanel : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        Library.Instance.CheckOverdueBooks(); // kitap tarihlerini kontrol edip listeye ekleme
+        Library.Instance.CheckOverdueBooks();
 
         IEnumerable<Book> results;
         string searchText = searchInput.text;

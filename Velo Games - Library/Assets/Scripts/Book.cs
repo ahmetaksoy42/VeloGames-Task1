@@ -12,6 +12,5 @@ public class Book
     public int copyCount;
     public int borrowId = 0; // daðýtýlan kopyalarý takip edebilmek için
     public int borrowedCopies =0;
-    //public DateTime borrowedDate = DateTime.MinValue;
-    public string borrowedDate; //DateTime türü json olarak kaydedilemediði için string olarak kaydedildi
+    public string borrowedDate; // DateTime ý json olarak kaydedemediðim için string kullandým
 }

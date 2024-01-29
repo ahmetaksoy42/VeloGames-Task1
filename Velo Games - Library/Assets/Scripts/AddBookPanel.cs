@@ -26,7 +26,6 @@ public class AddBookPanel : MonoBehaviour
         }
         else
         {
-            Debug.Log("Else girdi");
             if (library.IsAlreadyAdded(isbnInput.text, titleInput.text))
             {
                 Debug.LogError("A book with this title or ISBN already exists");
@@ -40,7 +39,7 @@ public class AddBookPanel : MonoBehaviour
                 newBook.isbn = isbnInput.text;
                 newBook.copyCount = int.Parse(copyCountInput.text);
                 newBook.borrowedCopies = 0;
-                errorText.text = ""; // kitap eklenirse hata mesajý kaybolsun
+                errorText.text = ""; // kitap baþarýyla eklenirse hata mesajý kaybolsun
                 library.AddBook(newBook);
             }
         }

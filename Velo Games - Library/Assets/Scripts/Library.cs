@@ -31,7 +31,6 @@ public class Library : MonoBehaviour
     {
         LoadLists();
     }
-
     public IEnumerable<Book> GetAllBooks()
     {
         return books;
@@ -58,13 +57,11 @@ public class Library : MonoBehaviour
     }
     public void ReturnBook(Book book)
     {
-
         var originalBook = books.FirstOrDefault(b => b.isbn == book.isbn); // copyCount vs. deðiþtirmek için isbn numarasýný kullanarak orijinal kitabý bul
         originalBook.copyCount++;
         originalBook.borrowedCopies--;
         borrowedBooks.Remove(book);
         SaveLists();
-
     }
     public void AddBook(Book book)
     {
@@ -77,8 +74,7 @@ public class Library : MonoBehaviour
         {
             book.borrowedCopies++;
             book.copyCount--;
-            //book.borrowedDate = DateTime.Now;
-            Book newBook = new Book(); // deneme þuanlýk // bütün kitaplarda ayný deðerler olmamasý için yeni kopya oluþturma
+            Book newBook = new Book(); // bütün kitaplarda ayný deðerler olmamasý için yeni kopya oluþturma
             newBook.title = book.title;
             newBook.author = book.author;
             newBook.isbn = book.isbn;
