@@ -4,9 +4,9 @@
             "title": "Sefiller",
             "author": "Victor Hugo",
             "isbn": "9780140444308",
-            "copyCount": 14,
+            "copyCount": 9,
             "borrowId": 0,
-            "borrowedCopies": 2,
+            "borrowedCopies": 4,
             "borrowedDate": ""
         },
         {
@@ -31,9 +31,9 @@
             "title": "The Great Gatsby",
             "author": "F. Scott Fitzgerald",
             "isbn": "9780743273565",
-            "copyCount": 24,
+            "copyCount": 25,
             "borrowId": 0,
-            "borrowedCopies": 1,
+            "borrowedCopies": 0,
             "borrowedDate": ""
         },
         {
@@ -41,6 +41,24 @@
             "author": "J.R.R. Tolkien",
             "isbn": "9780618260300",
             "copyCount": 33,
+            "borrowId": 0,
+            "borrowedCopies": 0,
+            "borrowedDate": ""
+        },
+        {
+            "title": "dasda",
+            "author": "dsfad",
+            "isbn": "sfsaasd21",
+            "copyCount": 16,
+            "borrowId": 0,
+            "borrowedCopies": 0,
+            "borrowedDate": ""
+        },
+        {
+            "title": "dasdadasfa",
+            "author": "dsfad",
+            "isbn": "sfsaasd2sda",
+            "copyCount": 10,
             "borrowId": 0,
             "borrowedCopies": 0,
             "borrowedDate": ""
@@ -57,22 +75,31 @@
             "borrowedDate": "2023-12-27 20:41:32"
         },
         {
-            "title": "The Great Gatsby",
-            "author": "F. Scott Fitzgerald",
-            "isbn": "9780743273565",
+            "title": "Sefiller",
+            "author": "Victor Hugo",
+            "isbn": "9780140444308",
             "copyCount": 0,
-            "borrowId": 10,
+            "borrowId": 28,
             "borrowedCopies": 0,
-            "borrowedDate": "2023-01-28 03:40:19"
+            "borrowedDate": "2024-01-29 04:23:20"
         },
         {
             "title": "Sefiller",
             "author": "Victor Hugo",
             "isbn": "9780140444308",
             "copyCount": 0,
-            "borrowId": 15,
+            "borrowId": 31,
             "borrowedCopies": 0,
-            "borrowedDate": "2024-01-29 04:16:13"
+            "borrowedDate": "2024-01-29 04:39:00"
+        },
+        {
+            "title": "Sefiller",
+            "author": "Victor Hugo",
+            "isbn": "9780140444308",
+            "copyCount": 0,
+            "borrowId": 32,
+            "borrowedCopies": 0,
+            "borrowedDate": "2024-01-29 04:39:00"
         }
     ],
     "savedOverdueBooks": [
@@ -84,16 +111,7 @@
             "borrowId": 5,
             "borrowedCopies": 0,
             "borrowedDate": "2023-12-27 20:41:32"
-        },
-        {
-            "title": "The Great Gatsby",
-            "author": "F. Scott Fitzgerald",
-            "isbn": "9780743273565",
-            "copyCount": 0,
-            "borrowId": 10,
-            "borrowedCopies": 0,
-            "borrowedDate": "2023-01-28 03:40:19"
         }
     ],
-    "LastBorrowId": 26
+    "LastBorrowId": 46
 }
